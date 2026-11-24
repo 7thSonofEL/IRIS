@@ -6,7 +6,7 @@
  *   do not want phone alerts yet. Alerts inside the app work without them.
  */
 window.IRIS_CONFIG = {
-  API_URL: '',
+  API_URL: 'https://script.google.com/macros/s/AKfycbxBspuD5KS3YB1SB-n1UfcN5lE0292DHk2K29ausarJrLEGYG33dt8X4N63JReFabZmMA/exec',
   FIREBASE: { apiKey: '', authDomain: '', projectId: '', messagingSenderId: '', appId: '' },
   VAPID_KEY: '',
   APP_CODE: 'iris'
