@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in | IRIS</title>
+<meta name="theme-color" content="#0f1b2d">
+<meta name="referrer" content="no-referrer">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/brand.css">
+</head>
+<body class="login-page">
+<main class="login-card" id="card">
+  <div class="login-brand"><img src="img/logo.png" alt=""><div><b>IRIS</b><span>Intelligence Request<br>Information System</span></div></div>
+
+  <section id="p-login">
+    <h1>Sign in</h1>
+    <div class="login-msg" id="msg" role="alert" hidden></div>
+    <form id="loginForm" novalidate>
+      <div class="field"><label for="username">Username</label><input type="text" id="username" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" required></div>
+      <div class="field"><label for="password">Password</label><div class="pw-wrap"><input type="password" id="password" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" required><button type="button" class="pw-toggle" data-pw-for="password" aria-label="Show password" aria-pressed="false" title="Show password"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+      <button class="btn btn-primary" id="loginBtn" type="submit">Sign in</button>
+    </form>
+    <p class="login-foot">Accounts are created by an IRIS administrator. If you cannot sign in, contact your administrator.</p>
+  </section>
+
+  <section id="p-change" hidden>
+    <h1>Choose a new password</h1>
+    <div class="login-msg info" role="status">For your security you must replace your temporary password before you continue.</div>
+    <div class="login-msg" id="msg2" role="alert" hidden></div>
+    <form id="changeForm" novalidate></form>
+  </section>
+</main>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="js/config.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/api.js"></script>
+<script src="js/splash.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
